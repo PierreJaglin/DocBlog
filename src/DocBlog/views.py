@@ -9,7 +9,7 @@ def index(request):
 
     date = datetime.now()
 
-    return render(request, 'index.html', context={
+    return render(request, 'DocBlog/index.html', context={
         'prenom': 'Pierre',
         'date': date,
     })
