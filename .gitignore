@@ -1,0 +1,47 @@
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers de log
+*.log
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Paramètres IDE/éditeur
+.vscode/
+.idea/
+*.swp
+
+# Fichiers de configuration utilisateur
+*.env
+.env.*
+
+# Django specific
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+
+# Fichiers de migration (facultatif si tu veux les ignorer)
+# **/migrations/*.py
+# **/migrations/__pycache__/
+
+# Coverage & test
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# PyInstaller
+*.spec
+
+# Mac OS / Linux / Windows
+.DS_Store
+Thumbs.db
