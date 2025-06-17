@@ -1,5 +1,15 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
+from datetime import datetime  
+
+# Create your views here.
 
 def index(request):
-    return HttpResponse("<h1>Bonjour, bienvenue sur mon site <h1>")
+
+    date = datetime.now()
+
+    return render(request, 'index.html', context={
+        'prenom': 'Pierre',
+        'date': date,
+    })
